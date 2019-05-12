@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@4"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@3"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}}, "vconcat": [{"data": {"name": "data-11d5e0acadef28205a00457e2672cb64"}, "mark": "line", "encoding": {"color": {"type": "nominal", "field": "Type"}, "tooltip": [{"type": "quantitative", "field": "Count"}], "x": {"type": "nominal", "field": "Month"}, "y": {"type": "quantitative", "field": "Count"}}, "selection": {"selector005": {"type": "interval"}}, "width": 800}, {"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Type"}, "x": {"type": "quantitative", "field": "Count"}, "y": {"type": "nominal", "field": "Type"}}, "transform": [{"filter": {"selection": "selector005"}}], "width": 800}], "data": {"name": "data-11d5e0acadef28205a00457e2672cb64"}, "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json", "datasets": {"data-11d5e0acadef28205a00457e2672cb64": [{"Month": "April", "Count": 564516, "Type": "Uber"}, {"Month": "May", "Count": 652435, "Type": "Uber"}, {"Month": "June", "Count": 663844, "Type": "Uber"}, {"Month": "July", "Count": 796121, "Type": "Uber"}, {"Month": "August", "Count": 829275, "Type": "Uber"}, {"Month": "September", "Count": 1028136, "Type": "Uber"}, {"Month": "April", "Count": 796865, "Type": "Taxi"}, {"Month": "May", "Count": 807456, "Type": "Taxi"}, {"Month": "June", "Count": 755445, "Type": "Taxi"}, {"Month": "July", "Count": 716026, "Type": "Taxi"}, {"Month": "August", "Count": 692351, "Type": "Taxi"}, {"Month": "September", "Count": 731852, "Type": "Taxi"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>
