@@ -74,10 +74,10 @@ h5 {
 .text-box {
   text-align:center;
   font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #808080;
   margin: 0 auto;
   padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 75%;
 }
 
 .title-text {
