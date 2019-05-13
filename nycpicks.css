@@ -58,11 +58,6 @@ iframe {
 
 
 /*Stying*/
-/*
-.intro-text {
-  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-*/
 
 h4 {
   text-align:center;
@@ -131,13 +126,10 @@ h5 {
 .chart1 {
   width:100%;
   height: 400px;
+  text-align: center;
 
 }
 .chart2 {
   width:100%;
   height:900px;
 }
-
-
-
-//
