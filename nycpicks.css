@@ -8,27 +8,22 @@ body {
     height:100%;
 }
 
-embed {
-  width:100%;
-  height: 100%;
-}
-
 img {
   height: 540px;
   width: 435px;
   object-fit: fill;
   padding: 10px;
-  margin: 20px;
-}
-
-object {
-  align-content: center;
+  margin-top: 0;
+  margin-left: 20px;
+  margine-right: 20px;
 }
 
 iframe {
-  overflow: hidden !important;
+  position: relative;
+  justify-content: center;
   border: none;
-  height: 100%;
+  display:block;
+  line-height: 0;
 }
 
 
@@ -58,67 +53,77 @@ iframe {
 }
 */
 
-.intro-text {
-  font: 20px/23px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+h4 {
   text-align:center;
-  padding: 10px;
 }
-
-.monthly-data {
-  font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-align:center;
-  padding: 10px;
-  height: 100%;
+h5 {
+  padding-bottom:0px;
 }
 
 .text-box {
-  font: 20px/23px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align:center;
-  padding: 10px;
-}
-
-.pickups-counts-avg {
   font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.title-text {
   text-align:center;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.img-box1 {
+  width:auto;
+  height:auto;
+  left: 0;
+  top: 300px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.img-box2 {
+  width:1020px;
+  left: 0;
+  top: 300px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+
+.main-box {
+  position: relative;
+  display: inline-block;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0 auto;
   padding: 10px;
-  height: 100%;
+  background-color: #2dc4b2;
+  border-radius: 3px;
+  width: 70%;
+  height: 50px;
+  text-align: center;
 }
 
-.pickups-locations {
-  font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  text-align:center;
-  padding: 10px;
+
+.image-container {
+  text-align: center;
 }
 
+.chart1 {
+  width:100%;
+  height: 400px;
 
-
-/*Charts*/
-/*
-.map-pickups {
-  width: 500px;
-  height: 600px;
 }
-*/
-
-
-/*Chart3*/
-
-.chart3 {
-  overflow: hidden !important;
+.chart2 {
+  width:100%;
+  height:900px;
 }
-
-/*
-.vega-actions a {
-    margin-right: 12px;
-    color: #757575;
-    font-weight: normal;
-    font-size: 13px;
-}
-.error {
-    color: red;
-}
-*/
-
 
 
 
