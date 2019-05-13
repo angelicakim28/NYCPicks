@@ -33,6 +33,17 @@ iframe {
   font: 40px/43px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.authors {
+  color: #ffff;
+  font: 15px/17px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-align: right;
+  margin: 0px;
+}
+
+.navbarSupportedContent .collapse .navbar-collapse {
+  text-align: right !important;
+}
+
 .bg-light {
   background-color:#000000 !important;
 }
@@ -65,6 +76,8 @@ h5 {
   font: 20px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0 auto;
   padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .title-text {
